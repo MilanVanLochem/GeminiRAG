@@ -1,0 +1,29 @@
+[project]
+name = "geminirag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "MilanVanLoc", email = "milanvanloc@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "chromadb>=1.5.9",
+    "google-genai>=2.25.0",
+    "ipykernel>=7.4.0",
+    "jupyterlab>=4.6.4",
+    "matplotlib>=3.11.2",
+    "notebook>=7.6.3",
+    "numpy>=2.4.6",
+    "pypdf>=6.19.0",
+    "torch>=2.14.0",
+    "torchaudio>=2.11.0",
+    "torchvision>=0.29.0",
+]
+
+[project.scripts]
+geminirag = "geminirag:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
